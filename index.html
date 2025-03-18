@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Host Check</title>
+</head>
+
+<body>
+    <h1>Host Check</h1>
+    <div id="result">Loading...</div>
+
+    <script>
+        // Check if the host is bequem.app
+        const isBequemApp = window.location.host === 'bequem.app';
+
+        // Display the result
+        const resultElement = document.getElementById('result');
+        resultElement.textContent = isBequemApp
+            ? 'This is running on bequem.app'
+            : 'This is not running on bequem.app';
+    </script>
+</body>
+
+</html>
